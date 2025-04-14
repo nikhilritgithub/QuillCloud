@@ -12,7 +12,7 @@
         <form action="/create" method="post">
             <input class="block w-full rounded-md outline-none px-5 py-2 bg-zinc-810" type="text" placeholder="Enter your title" name="title">
             <textarea class="block w-full rounded-md outline-none mt-2 px-3 py-2 resize-none bg-zinc-810"  placeholder="write your task description" name="details"></textarea>
-            <input class="mt-2 bg-red-610 px-5 py-3 rounded-md" type="submit" value="Create Task">
+            <input class="mt-2 bg-red-600 px-5 py-3 rounded-md" type="submit" value="Create Task">
         </form>
       </div>  
       <div class="tasks flex gap-3 flex-wrap p-12">
@@ -21,7 +21,7 @@
             <div class="task min-w-75 px-3 py-4 bg-zinc-810">
                 <h1 class="text-white text-3xl tracking-tighter"><%= val %></h1>
                 <div class="flex w-full justify-between item-center mt-3">
-                <a class="text-blue-520 inline-block" href="/file/<%= val%>">Read more</a>
+                <a class="text-blue-500 inline-block" href="/file/<%= val%>">Read more</a>
                 <a class="text-zinc-650" href="/edit/<%= val %>">edit </a>
                 </div>
             </div>
