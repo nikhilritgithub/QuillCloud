@@ -37,6 +37,7 @@ app.post("/edit-userName", function(req ,res){
         res.redirect("/created");
     }
 })
+
 app.post('/create', function(req, res){
     fs.writeFile(`./files/${req.body.title.split(' ').join(' ')}.txt`, req.body.details, function(err){
         res.redirect("/");
