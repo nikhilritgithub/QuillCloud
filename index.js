@@ -45,4 +45,9 @@ app.post('/create', function(req, res){
     });
 })
 
+app.post("/new-route", function(req,res){
+    res.send(index.js);
+    fs.wrtiteFile(`./files/&{req.body.title.split(' ').join(' ')}.txt`, req.bdoy.title.new.body, function(req, res){
+        res.redirect("/"));
+})
 app.listen(3000);
