@@ -50,4 +50,6 @@ app.post("/new-route", function(req,res){
     fs.wrtiteFile(`./files/&{req.body.title.split(' ').join(' ')}.txt`, req.bdoy.title.new.body, function(req, res){
         res.redirect("/"));
 })
+
+    
 app.listen(3000);
