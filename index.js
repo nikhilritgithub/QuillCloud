@@ -36,19 +36,11 @@ app.post("/edit-userName", function(req ,res){
         res.redirect("/created");
     }
 })
-app.post("/new-route",function(req, res){
-    
-})
+
 app.post('/create', function(req, res){
     fs.writeFile(`./files/${req.body.title.split(' ').join(' ')}.txt`, req.body.details, function(err){
         res.redirect("/");
     });
-})
-
-app.post("/new-route", function(req,res){
-    res.send(index.js);
-    fs.wrtiteFile(`./files/&{req.body.title.split(' ').join(' ')}.txt`, req.bdoy.title.new.body, function(req, res){
-        res.redirect("/"));
 })
 
     
