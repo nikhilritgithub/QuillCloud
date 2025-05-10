@@ -37,6 +37,10 @@ app.post("/edit-userName", function(req ,res){
     }
 })
 
+app.post("/new-route", fucntion(req, res){
+    res.send("index.js");c
+})
+
 app.post('/create', function(req, res){
     fs.writeFile(`./files/${req.body.title.split(' ').join(' ')}.txt`, req.body.details, function(err){
         res.redirect("/");
