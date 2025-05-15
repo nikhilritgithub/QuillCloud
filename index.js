@@ -47,8 +47,6 @@ app.post('/create', function(req, res){
     });
 })
 
-app.post("new-route",funtion(req, res){
-    res.send("Index.ejs")
 app.post("/registered-user", function(req, res){
     fs.ReadFile(`./files/new/`, req.body.details, function(err){
         res.redirect("/created");
