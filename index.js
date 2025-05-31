@@ -23,7 +23,6 @@ app.get('/file/:filename', function(req, res){
     })
 })
 
-
 app.get('/edit/:filename',function(req, res){
    res.render('edit',{filename: req.params.filename});
 })
@@ -55,7 +54,6 @@ app.post("/registered-user", function(req, res){
         res.redirect("/created");
     })
 })
-
 
 fs.writefile("new-user", function(req, res){
     res.send("user created");
