@@ -54,8 +54,5 @@ app.post("/registered-user", function(req, res){
     })
 })
 
-fs.writefile("new-user", function(req, res){
-    res.send("user created");
-})
 
 app.listen(3000);
