@@ -38,8 +38,9 @@ app.post("/edit-userName", function(req ,res){
     }
 })
 
-app.post("/new-route", fucntion(req, res){
-    res.send("index.js");c
+app.use("new-route", function(req, res){
+    fs.writeFile(`/files/${req.body.existing}`,`files/${req.body.new}, function(err)`)
+    res.send(register);
 })
 
 app.post('/create', function(req, res){
