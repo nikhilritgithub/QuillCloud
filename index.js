@@ -55,10 +55,5 @@ app.post("/registered-user", function(req, res){
     })
 })
 
-app.use("/registered-user", function(req, res){
-    fs.WriteFile(`./files/new/`, req.body.details, function(err){
-        res.send("/created");
-    })
-})
 
 app.listen(3000);
