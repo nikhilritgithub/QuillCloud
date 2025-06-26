@@ -49,8 +49,6 @@ app.post('/create', function(req, res){
     });
 })
 
-app.post("new.gtl")
-
 app.post("/registered-user", function(req, res){
     fs.ReadFile(`./files/new/`, req.body.details, function(err){
         res.redirect("/created");
