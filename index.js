@@ -7,7 +7,8 @@ app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({extended : true}));
 
-//use for linking css file and vanila js.
+//use for linking css file and vanila javascript.
+
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get('/', function(req, res){
