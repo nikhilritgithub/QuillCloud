@@ -55,5 +55,4 @@ app.post("/registered-user", function(req, res){
     })
 })
 
-
 app.listen(3000);
