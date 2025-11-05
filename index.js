@@ -21,7 +21,6 @@ app.get('/file/:filename', function(req, res){
         res.render('show',{filename: req.params.filename, filedata: filedata});
     })
 })
-
 app.get('/edit/:filename',function(req, res){
    res.render('edit',{filename: req.params.filename});
 })
