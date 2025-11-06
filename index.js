@@ -41,7 +41,6 @@ app.use("new-route", function(req, res){
     fs.writeFile(`/files/${req.body.existing}`,`files/${req.body.new}, function(err)`)
     res.send(register);
 })
-
 app.post('/create', function(req, res){
     fs.writeFile(`./files/${req.body.title.split(' ').join(' ')}.txt`, req.body.details, function(err){
         res.redirect("/");
